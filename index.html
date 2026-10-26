@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mushahid Hussain - Web Developer Portfolio</title>
+    <meta name="description" content="Professional Web & Full-Stack Developer portfolio of Mushahid Hussain featuring responsive projects, GitHub repositories, technical skills showcase, interactive resume, and contact channels." />
+    <meta property="og:title" content="Mushahid Hussain - Web Developer Portfolio" />
+    <meta property="og:description" content="Professional Web & Full-Stack Developer portfolio of Mushahid Hussain featuring responsive projects, GitHub repositories, technical skills showcase, interactive resume, and contact channels." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    <!-- Golden Phoenix Favicon -->
+    <link rel="icon" type="image/jpeg" href="./assets/favicon.jpg">
+    <link rel="shortcut icon" type="image/jpeg" href="./assets/favicon.jpg">
+    <link rel="apple-touch-icon" href="./assets/favicon.jpg">
+    
+    <!-- Google Fonts for Editorial Luxury + Modern Tech typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=JetBrains+Mono:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,600;1,700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <script type="module" crossorigin src="./assets/index-ieVbqdqj.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-B-qp33Bd.css">
+    <link rel="stylesheet" href="./assets/luxury-hover.css">
+  </head>
+  <body class="bg-[#F8F5EE] text-[#1D2A20] antialiased selection:bg-[#C5A059] selection:text-white min-h-screen">
+    <div id="root"></div>
+
+    <!-- Luxury Interactive Hover & Cursor Glow Engine -->
+    <div id="luxury-mouse-glow" style="left: -999px; top: -999px;"></div>
+    <script>
+      (function() {
+        const glow = document.getElementById('luxury-mouse-glow');
+        if (!glow) return;
+        let mouseX = -999, mouseY = -999;
+        let currentX = -999, currentY = -999;
+
+        window.addEventListener('mousemove', function(e) {
+          mouseX = e.clientX;
+          mouseY = e.clientY;
+        }, { passive: true });
+
+        function renderGlow() {
+          if (mouseX > -100) {
+            currentX += (mouseX - currentX) * 0.15;
+            currentY += (mouseY - currentY) * 0.15;
+            glow.style.left = currentX + 'px';
+            glow.style.top = currentY + 'px';
+          }
+          requestAnimationFrame(renderGlow);
+        }
+        requestAnimationFrame(renderGlow);
+
+        document.addEventListener('mouseover', function(e) {
+          var target = e.target.closest('a, button, img, h1, h2, h3, h4, [class*="rounded-full"], span[class*="px-"]');
+          if (target) {
+            glow.style.width = '520px';
+            glow.style.height = '520px';
+            glow.style.background = 'radial-gradient(circle, rgba(197, 160, 89, 0.22) 0%, rgba(80, 227, 100, 0.08) 45%, transparent 70%)';
+          } else {
+            glow.style.width = '380px';
+            glow.style.height = '380px';
+            glow.style.background = 'radial-gradient(circle, rgba(197, 160, 89, 0.12) 0%, rgba(80, 227, 100, 0.04) 40%, transparent 70%)';
+          }
+        });
+      })();
+    </script>
+  </body>
+</html>

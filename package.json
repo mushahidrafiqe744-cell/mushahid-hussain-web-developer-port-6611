@@ -1,0 +1,20 @@
+{
+  "name": "mushahid-hussain-portfolio",
+  "version": "1.0.0",
+  "description": "Mushahid Hussain - Web Developer Portfolio (Luxury Editorial Edition)",
+  "scripts": {
+    "start": "node local-server.js",
+    "serve": "node local-server.js",
+    "dev": "node local-server.js",
+    "test:assets": "node test_all_assets.js"
+  },
+  "keywords": [
+    "portfolio",
+    "web-developer",
+    "react",
+    "tailwind",
+    "luxury-theme"
+  ],
+  "author": "Mushahid Hussain",
+  "license": "MIT"
+}

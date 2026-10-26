@@ -1,0 +1,10 @@
+const fs = require('fs');
+let js = fs.readFileSync('assets/index-ieVbqdqj.js', 'utf8');
+const beforeCount = (js.match(/`\/assets\//g) || []).length;
+console.log('Matches before:', beforeCount);
+js = js.replace(/`\/assets\//g, '`./assets/');
+js = js.replace(/"\/assets\//g, '"./assets/');
+js = js.replace(/'\/assets\//g, '\'./assets/');
+fs.writeFileSync('assets/index-ieVbqdqj.js', js, 'utf8');
+const afterCount = (js.match(/`\.\/assets\//g) || []).length;
+console.log('Matches after replacement:', afterCount);
